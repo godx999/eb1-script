@@ -6,13 +6,13 @@
 <br/>2. 在最下面添加如下文本并保存
 <br/>脚本1：<br/>
 </p><pre><code>[Script]
-unlock_emby = type=http-response,script-path=https://raw.githubusercontent.com/nikleechan/eb1-script/master/unlock_emby.js,pattern=^http(s?):\/\/(www\.|)mb3admin\.com\/.*$,max-size=131072,requires-body=true,timeout=10,debug=false,enable=true
+unlock_emby = type=http-response,script-path=https://raw.githubusercontent.com/godx999/eb1-script/master/unlock_emby.js,pattern=^http(s?):\/\/(www\.|)mb3admin\.com\/.*$,max-size=131072,requires-body=true,timeout=10,debug=false,enable=true
 [MITM]
 hostname = mb3admin.com,www.mb3admin.com</code></pre>
 
 <br/>脚本2：<br/>
 </p><pre><code>[Script]
-EmbyPremiere = type=http-response,script-path=https://raw.githubusercontent.com/nikleechan/eb1-script/master/EmbyPremiere.js,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,max-size=131072,requires-body=true,timeout=10,enable=true
+EmbyPremiere = type=http-response,script-path=https://raw.githubusercontent.com/godx999/eb1-script/master/EmbyPremiere.js,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,max-size=131072,requires-body=true,timeout=10,enable=true
 
 [MITM]
 hostname = mb3admin.com</code></pre>
